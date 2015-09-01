@@ -96,5 +96,17 @@ main {
   .mainContainer {
     width: 15em;
   }
+  .selector1, .selector2 {
+    display: none;
+  }
+  .menuOptions {
+    width: 8em;
+    margin: 1em auto 0.5em auto;
+  }
+  .menuOptions > * {
+    margin: 3px auto;
+    display: block;
+    width: 7.5em;
+  }
 
 }
