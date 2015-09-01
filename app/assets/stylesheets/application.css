@@ -118,6 +118,9 @@ main {
 }
 
 @media (max-width: 35em) {
+  * {
+    cursor: pointer;
+  }
   .mainContainer {
     width: 15em;
   }
