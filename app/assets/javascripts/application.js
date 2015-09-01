@@ -21,10 +21,28 @@ $(document).ready(function() {
   $('.portfolioImage').css({'height':cw+'px'});
   $(".selector1").css("border-top", "10px solid red")
   $.getJSON("/portfolio")
-  .done(function(response){
+  .then(function(response){
     console.log(response)
     response.forEach(function(portfolio){
-      $(".mainContainer").append("<a href='"+portfolio.projectUrl+"'> <img class='portfolioImage' src='"+portfolio.imageUrl+"'></a>")
+      $(".mainContainer").append("<div id='id_"+portfolio.id+"' class='whichPortfolio'> <img class='portfolioImage' src='"+portfolio.imageUrl+"'></div>")
+    })
+  })
+  .then(function(response){
+    $(".whichPortfolio").on("click", function(){
+      var temp = $(this).attr("id")
+      temp = temp.split("_");
+      var id = temp[1]
+      console.log("clicked a portfolio with id: "+id)
+      console.log(response)
+      console.log("Look here: "+$(this).css("width"));
+      // if($(this).css("width") != "240px"){
+      //   $(this).css("width", "15em");
+      //   $(this).css("height", "15em");
+      // }
+      // else{
+      //   $(this).css("width", "20em");
+      //   $(this).css("height", "20em");
+      // }
     })
   })
   $("#portfolioLink").on("click", function() {

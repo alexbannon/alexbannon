@@ -76,8 +76,18 @@ main {
 }
 
 .portfolioImage {
+  width: 100%;
+  height: 100%;
+}
+
+.whichPortfolio {
+  position: relative;
+  display: inline-block;
   width: 15em;
   height: 15em;
+  -webkit-transition: width 2s, height 2s, top 2s, right 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, top 2s, right 2s, transform 2s;
+
 }
 
 .mainContainer {
