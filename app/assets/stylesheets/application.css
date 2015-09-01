@@ -85,15 +85,29 @@ main {
   display: inline-block;
   width: 15em;
   height: 15em;
-  -webkit-transition: width 2s, height 2s, top 2s, right 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, top 2s, right 2s, transform 2s;
-
 }
 
 .mainContainer {
   width: 61em;
   margin: 0 auto;
   padding: 0 0 50px 0;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  -webkit-transition: left 1s;
+  transition: left 1s;
+}
+.aboutContainer {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 200px;
+  text-align: center;
+  left: 2000px;
+  -webkit-transition: left 1s;
+  transition: left 1s;
+}
+.aboutInfo {
 }
 
 @media (max-width: 61em) {
