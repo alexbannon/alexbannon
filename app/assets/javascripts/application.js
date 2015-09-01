@@ -17,6 +17,9 @@
 
 
 $(document).ready(function() {
+  var cw = $('.portfolioImage').width();
+  $('.portfolioImage').css({'height':cw+'px'});
+  $(".selector1").css("border-top", "10px solid red")
   $.getJSON("/portfolio")
   .done(function(response){
     console.log(response)
