@@ -88,7 +88,7 @@ main {
 }
 
 .mainContainer {
-  width: 61em;
+  width: 60em;
   margin: 0 auto;
   padding: 0 0 50px 0;
   position: relative;
@@ -98,17 +98,29 @@ main {
   transition: left 1s;
 }
 .aboutContainer {
+  font-size: 1.5em;
   position: absolute;
-  width: 100%;
+  width: 85%;
   overflow: hidden;
   top: 200px;
-  text-align: center;
+  text-align: justify;
   left: 2000px;
   -webkit-transition: left 1s;
   -webkit-transform-style: preserve-3d;
   transition: left 1s;
 }
-.aboutInfo {
+.links {
+  margin: 20px auto;
+  width: 200px;
+}
+a > img, .email, .twitter, .linkedin {
+  margin: 0 4px;
+  width: 50px;
+  height: 50px;
+}
+.contactInfo {
+  margin: 1em auto 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 61em) {

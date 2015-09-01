@@ -33,9 +33,10 @@ $(document).ready(function() {
     $(".selector2").css("border-top", "0px solid red")
     $(".selector1").css("border-top", "10px solid red")
   })
+
   $("#aboutLink").on("click", function() {
     $(".mainContainer").css("left", "-2000px")
-    $(".aboutContainer").css("left", "0px")
+    $(".aboutContainer").css("left", "8%")
     $(".selector1").css("border-top", "0px solid red")
     $(".selector2").css("border-top", "10px solid red")
   })
