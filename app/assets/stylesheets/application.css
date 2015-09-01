@@ -105,6 +105,7 @@ main {
   text-align: center;
   left: 2000px;
   -webkit-transition: left 1s;
+  -webkit-transform-style: preserve-3d;
   transition: left 1s;
 }
 .aboutInfo {
