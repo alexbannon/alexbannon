@@ -99,6 +99,7 @@ main {
   transition: left 1s;
 }
 .aboutContainer {
+  min-height: 800px;
   font-size: 1.5em;
   position: absolute;
   width: 85%;
@@ -112,9 +113,9 @@ main {
 }
 .links {
   margin: 20px auto;
-  width: 200px;
+  width: 268px;
 }
-a > img, .email, .twitter, .linkedin {
+a > img, .email, .twitter, .linkedin, .github {
   margin: 0 4px;
   width: 50px;
   height: 50px;
