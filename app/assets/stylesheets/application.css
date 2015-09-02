@@ -22,6 +22,7 @@ body {
   padding: 0;
   background-color: grey;
   font-family: 'Flamenco', cursive;
+  overflow: hidden;
 }
 #myName {
   text-align: center;
